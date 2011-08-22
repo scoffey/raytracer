@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" 
+	"http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D profile="Immersive" version="3.0"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+	xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<head>
+		<meta content="test1.x3d" name="title" />
+		<meta content="Example 1: show simple Shapes."
+			name="description" />
+		<meta content="Computacion Grafica" name="editors" />
+		<meta content="Abril 2008" name="created" />
+		<meta content="Abril 2008" name="modified" />
+	</head>
+	<Scene>
+		<Viewpoint orientation="1 0 0 -0.3" position="0 4 10"
+			fieldOfView="0.5" />
+
+		<PointLight location="-3 3 9" color="1 1 1" intensity="1" radius="2"
+			on="true" />
+
+
+		<Transform translation="0 0 -3" rotation="0 1 0 0.4" scale="2 2 2">
+			<Shape>
+				<Appearance>
+					<Material specularColor="1 1 0" diffuseColor="1 1 0" ambientIntensity="0">
+						<MetadataSet>
+							<MetadataFloat name="diffuse" value="0.5"
+								containerField="value" />
+							<MetadataFloat name="specular" value="1"
+								containerField="value" />
+							<MetadataFloat name="reflection" value="1"
+								containerField="value" />
+						</MetadataSet>
+					</Material>
+				</Appearance>
+				<TriangleSet solid="false" ccw="true"
+					containerField="geometry">
+					<Coordinate
+						point="
+					0 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 1 0  
+					0 0 1 1 0 1 0 1 1 1 0 1 1 1 1 0 1 1
+					0 1 1 1 1 1 0 1 0 1 1 1 1 1 0 0 1 0
+					0 0 1 0 0 0 1 0 1 1 0 1 0 0 0 1 0 0
+					1 0 0 1 1 0 1 1 1 1 0 0 1 1 1 1 0 1
+					0 0 1 0 1 1 0 0 0 0 0 0 0 1 1 0 1 0
+					 " />
+				</TriangleSet>
+			</Shape>
+		</Transform>
+
+
+		<Transform translation="2 0 0" rotation="0 1 0 0.4" scale="1.5 1.5 1.5">
+			<Shape>
+				<Appearance>
+					<Material specularColor="0 0 1" diffuseColor="0 0 1" ambientIntensity="0">
+						<MetadataSet>
+							<MetadataFloat name="diffuse" value="0.5"
+								containerField="value" />
+							<MetadataFloat name="specular" value="1"
+								containerField="value" />
+							<MetadataFloat name="reflection" value="1"
+								containerField="value" />
+						</MetadataSet>
+					</Material>
+				</Appearance>
+				<TriangleSet solid="false" ccw="true"
+					containerField="geometry">
+					<Coordinate
+						point="
+					0 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 1 0  
+					0 0 1 1 0 1 0 1 1 1 0 1 1 1 1 0 1 1
+					0 1 1 1 1 1 0 1 0 1 1 1 1 1 0 0 1 0
+					0 0 1 0 0 0 1 0 1 1 0 1 0 0 0 1 0 0
+					1 0 0 1 1 0 1 1 1 1 0 0 1 1 1 1 0 1
+					0 0 1 0 1 1 0 0 0 0 0 0 0 1 1 0 1 0
+					 " />
+				</TriangleSet>
+			</Shape>
+		</Transform>
+
+
+		<Transform translation="-3 0 0" rotation="0 1 0 1.3" scale="2 2 1">
+			<Shape>
+				<Appearance>
+					<Material specularColor="0 1 0" diffuseColor="0 1 0" ambientIntensity="0">
+											<MetadataSet>
+							<MetadataFloat name="diffuse" value="0.5"
+								containerField="value" />
+							<MetadataFloat name="specular" value="1"
+								containerField="value" />
+							<MetadataFloat name="reflection" value="1"
+								containerField="value" />
+						</MetadataSet>
+						
+					</Material>
+				</Appearance>
+				<TriangleSet solid="false" ccw="true"
+					containerField="geometry">
+					<Coordinate
+						point="
+					0 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 1 0  
+					0 0 1 1 0 1 0 1 1 1 0 1 1 1 1 0 1 1
+					0 1 1 1 1 1 0 1 0 1 1 1 1 1 0 0 1 0
+					0 0 1 0 0 0 1 0 1 1 0 1 0 0 0 1 0 0
+					1 0 0 1 1 0 1 1 1 1 0 0 1 1 1 1 0 1
+					0 0 1 0 1 1 0 0 0 0 0 0 0 1 1 0 1 0
+					 " />
+				</TriangleSet>
+			</Shape>
+		</Transform>
+
+
+		<Transform translation="-5 -0.5 -5" scale="10 0.5 10">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1 1 1" />
+				</Appearance>
+				<TriangleSet solid="false" ccw="true"
+					containerField="geometry">
+					<Coordinate
+						point="
+					0 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 1 0  
+					0 0 1 1 0 1 0 1 1 1 0 1 1 1 1 0 1 1
+					0 1 1 1 1 1 0 1 0 1 1 1 1 1 0 0 1 0
+					0 0 1 0 0 0 1 0 1 1 0 1 0 0 0 1 0 0
+					1 0 0 1 1 0 1 1 1 1 0 0 1 1 1 1 0 1
+					0 0 1 0 1 1 0 0 0 0 0 0 0 1 1 0 1 0
+					 " />
+				</TriangleSet>
+			</Shape>
+		</Transform>
+		
+		<Transform translation="-5 -5 -5" scale="10 10 0.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1 1 1" />
+				</Appearance>
+				<TriangleSet solid="false" ccw="true"
+					containerField="geometry">
+					<Coordinate
+						point="
+					0 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 1 0  
+					0 0 1 1 0 1 0 1 1 1 0 1 1 1 1 0 1 1
+					0 1 1 1 1 1 0 1 0 1 1 1 1 1 0 0 1 0
+					0 0 1 0 0 0 1 0 1 1 0 1 0 0 0 1 0 0
+					1 0 0 1 1 0 1 1 1 1 0 0 1 1 1 1 0 1
+					0 0 1 0 1 1 0 0 0 0 0 0 0 1 1 0 1 0
+					 " />
+				</TriangleSet>
+			</Shape>
+		</Transform>
+
+		<Transform translation="-3 0.5 1.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0 1 1" specularColor="1 1 1">
+						<MetadataSet>
+							<MetadataFloat name="reflection" value="1" containerField="value"/>
+							<MetadataFloat name="refraction" value="0" containerField="value"/>
+							<MetadataFloat name="diffuse" value="0" containerField="value"/>
+							<MetadataFloat name="specular" value="1" containerField="value"/>
+						</MetadataSet>
+					</Material>
+				</Appearance>
+				<Sphere radius="0.5" />
+			</Shape>
+		</Transform>
+
+		<Transform translation="-0.5 1 1">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1 0 1" specularColor="1 1 1">
+						<MetadataSet>
+							<MetadataFloat name="reflection" value="1" containerField="value"/>
+							<MetadataFloat name="refraction" value="0" containerField="value"/>
+							<MetadataFloat name="diffuse" value="0" containerField="value"/>
+							<MetadataFloat name="specular" value="1" containerField="value"/>
+						</MetadataSet>
+					</Material>
+				</Appearance>
+				<Sphere radius="0.7" />
+			</Shape>
+		</Transform>
+
+		<Transform translation="1 0.5 2.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1 0 0" specularColor="1 1 1">
+						<MetadataSet>
+							<MetadataFloat name="reflection" value="1" containerField="value"/>
+							<MetadataFloat name="refraction" value="0" containerField="value"/>
+							<MetadataFloat name="diffuse" value="0" containerField="value"/>
+							<MetadataFloat name="specular" value="1" containerField="value"/>
+						</MetadataSet>
+					</Material>
+				</Appearance>
+				<Sphere radius="0.5" />
+			</Shape>
+		</Transform>
+
+		<Transform translation="2.5 0.5 2.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1 0 0"
+						specularColor="1 1 1" transparency="1" ambientIntensity="0">
+						<MetadataSet>
+							<MetadataFloat name="diffuse" value="0"
+								containerField="value" />
+							<MetadataFloat name="specular" value="0"
+								containerField="value" />
+							<MetadataFloat name="reflection" value="0.1"
+								containerField="value" />
+							<MetadataFloat name="refraction" value="1.1"
+								containerField="value" />
+								
+						</MetadataSet>
+					</Material>
+				</Appearance>
+				<Sphere radius="0.5" />
+			</Shape>
+		</Transform>
+	</Scene>
+</X3D>

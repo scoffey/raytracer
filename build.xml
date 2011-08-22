@@ -1,0 +1,35 @@
+<project name="RayTracer" default="all" basedir=".">
+
+	<property name="src" value="src" />
+	<property name="bin" value="bin" />
+	<property name="lib" value="lib" />
+
+	<target name="all" depends="clean, compile, dist" />
+
+	<target name="compile">
+		<javac srcdir="${src}" destdir="${bin}" encoding="UTF-8"  debug="true" sourcepath="${src}">
+			<classpath>
+				<pathelement path="${classpath}" />
+				<fileset dir="${lib}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="clean">
+		<delete>
+			<fileset dir="${bin}" />
+		</delete>
+	</target>
+
+	<target name="dist" depends="clean,compile">
+		<jar jarfile="raytracer.jar" basedir="${bin}">
+			<manifest>
+				<attribute name="Main-Class" value="raytracer.CgTpe2" />
+				<attribute name="Class-Path" value="lib/vecmath.jar lib/j3dutils.jar lib/j3dcore.jar lib/j3d-org.jar lib/xj3d-all.jar lib/xj3d-common.jar lib/xj3d-core.jar lib/xj3d-j3d.jar lib/xj3d-parser.jar lib/uri.jar lib/vlc_uri.jar lib/xj3d-jaxp.jar lib/xj3d-xml.jar lib/xj3d-xml-util.jar lib/dis.jar lib/js.jar lib/xj3d-ecmascript.jar lib/xj3d-jsai.jar lib/xj3d-net.jar lib/xj3d-render.jar lib/xj3d-runtime.jar lib/xj3d-sav.jar lib/xj3d-script-base.jar" />
+			</manifest>
+		</jar>
+	</target>
+
+</project>
